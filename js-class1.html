@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var a, b, c, d;
+        // a=10;
+        // b=20;
+        // c=5;
+        // d=15;
+        // d**=a;
+
+
+        // document.write(d);
+
+
+        // var a,b,c,d;
+        // a= 15.0;
+        // b= "15";
+        // document.write(a==b);
+
+
+        // var a,b,c;
+        // a=10;
+        // b=15;
+        // c=15;
+        // if(a>=c){
+        //     document.write('Var B equal to C');
+        // }else{
+        //     document.write('Value is in else condition');
+        // }
+
+
+        // var a,b,c,d;
+        // a=10;
+        // b=15;
+        // if(!(a==b)){
+        //     document.write("condition is true");
+        // }
+        // function odd_even() {
+        //             var no = Number(document.getElementById("no_input").value);
+        //             var result = document.getElementById("result");
+
+        //             if (isNaN(no)) {
+        //                 result.innerHTML = "Please enter a valid number!";
+        //             } else if (no == 0) {
+        //                 result.innerHTML = "Enter Any Number";
+        //             } else if (no % 2 == 0) {
+        //                 result.innerHTML = "Even Number";
+        //             } else {
+        //                 result.innerHTML = "Odd Number";
+
+        // let a = prompt("Enter the first number (a):");
+        // let b = prompt("Enter the second number (b):");
+
+        // alert("You entered:\nA = " + a + "\nB = " + b);
+
+
+        //             }
+        //         }
+
+    </script>
+
+    <!-- <h1 id="result"></h1>  -->
+
+    <!-- <script>
+    var a, b, c;
+    a = Number(prompt("Enter 1st Value")); 
+    b = Number(prompt("Enter 2nd Value")); 
+
+    function sum() {
+        c = a + b; 
+        document.getElementById("result").innerHTML = "Sum of " + a + " + " + b + " = " + c;
+    }
+
+    sum(); 
+</script>    
+    <label>Enter Any Number:</label>
+    <input id="no_input" type="text"><br />
+    <button onclick="odd_even()">Click me</button>
+
+    <p id="result"></p> -->
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sum of Two Numbers</title>
+</head>
+<body>
+
+    <h2>Sum of Two Numbers</h2>
+
+    <label for="num1">Enter 1st Value:</label>
+    <input type="number" id="num1"> <br><br>
+
+    <label for="num2">Enter 2nd Value:</label>
+    <input type="number" id="num2"> <br><br>
+
+    <button onclick="sum()">Calculate Sum</button> 
+    <p id="result"></p> 
+
+    <script>
+        function sum() {
+            var a = Number(document.getElementById("num1").value);
+            var b = Number(document.getElementById("num2").value);
+            var c = a + b;
+
+            document.getElementById("result").innerHTML = "Sum of " + a + " + " + b + " = " + c;
+        }
+    </script>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function name(firstname = "Abdul ", lastname = "Basit"){
+            document.write("My Name is " + firstname +" "+lastname);
+            
+        }
+        name("Abdul","Basit")
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function name(firstname = "Abdul ", lastname = "Basit"){
+            a= Number(firstname) + Number(lastname);
+            document.write("My Name is " + firstname +" "+lastname + " + " + a);
+            
+        }
+        name("4","6")
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum(math,eng,sc){
+            var s = math + eng + sc;
+            return s;
+        }
+        var total = sum(55, 60,75);
+        document.write(total +"<br>");
+        function mid(mid,div){
+            var c = mid / div ;
+            return c;
+        }
+    var mid = mid( total, 2);
+    document.write(mid);
+    </script>
+    
+</body>
+</html> -->
+
+
+
+<!-- <script>
+    let number = 1;
+
+while (number <= 15) {
+    document.write(number +" Hello Sir<br>");  
+    number++;             
+}
+
+</script> -->
+
+<!-- <script>
+  
+  let number = 1;
+    do {
+        document.write(number + " Hello Sir<br>");
+        number++;  // Increment number
+    } while (number <= 10);
+</script> -->
+<!-- <script>
+    for(a=10; a>=1; --a){
+        if(a==3){
+            document.write('Welcome<br>');
+            break;
+            
+        }
+        document.write(a + ' Hello Sir <br>');
+    }
+</script> -->
+
+<!-- <script> 
+    
+    for(a=1; a<=10; a++){
+        if(a % 2 == 0){
+            document.write( a +' Is Even Number <br>');
+        }
+        else{
+            document.write(a + ' is Odd Number <br>');
+        }
+    }
+</script> -->
+
+<!-- <script>
+    document.write('<table border="1" width="40%">');  
+    for (var a = 1; a <= 100; a = a + 10) {
+        document.write('<tr>');  
+        for (var b = a; b < a + 10; b++) {
+            document.write('<td>' + b + '</td>'); 
+        }
+        document.write('</tr>'); 
+    }
+    document.write('</table>');  
+</script> -->
+
+<!-- 
+<script>
+    for(var a = 1; a <= 100; a = a +10){
+        for(var b = a; b < a + 10; b++){
+            document.write(b+' ');
+        }
+        document.write("<br>");
+        
+    }
+</script>
+<br>
+<script>
+    for(var a = 100; a >= 1; a = a -10){
+        for(var b = a; b > a - 10; b--){
+            document.write(b+' ');
+        }
+        document.write("<br>");
+        
+    }
+</script> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Pattern</title>
+   
+</head>
+<body>
+    <div class="pattern">
+        <script>
+            var n = 5; 
+            for (var i = 1; i <= n; i++) {
+                
+                for (var j = 1; j <= (2 * i - 1); j++) {
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+            
+            for (var i = n - 1; i >= 1; i--) {
+              
+                for (var j = 1; j <= (2 * i - 1); j++) {
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+        </script>
+    </div>
+</body>
+</html> -->
+
+
+
+<!-- <script>
+    var a=[10,20,30,40];
+    var b=[10,'Abdul','Basit',true];
+    document.write(b[3]);
+</script> -->
+
+<!-- <script>
+    var ary = [10, 20, 30, 40, 50];
+     
+    document.write("<table border='1'>");
+    document.write("<tr><th>Value</th></tr>");
+    for (var a = 0; a < ary.length; a++) {
+        document.write("<tr>");
+        document.write("<td>" + ary[a] + " </td>");
+        document.write("</tr>"); 
+       
+    }
+    document.write("</table>");
+
+</script> -->
+
+
+
+<!-- <script>
+    var ary = [10, 20, 30, 40, 50];
+    var sum = 0;  
+    document.write("<table border='1'>");
+    document.write("<tr><th>Value</th></tr>");
+    for (var a = 0; a < ary.length; a++) {
+        document.write("<tr>");
+        document.write("<td>" + ary[a] + "</td>");
+        document.write("</tr>"); 
+        sum += ary[a];
+    }
+    document.write("</table>");
+    document.write("<p><strong>Sum: </strong>" + sum + "</p>");
+</script> -->
+
+<!-- <script>
+    var ary = new Array();
+    ary[0] = 10;
+    ary[1] = 20;
+    ary[2] = 40;
+    ary[5] = 60;
+   
+    document.write("<table border='1'>");
+    document.write("<tr><th>Value</th></tr>");
+    for (var a = 0; a < ary.length; a++) {
+        document.write("<tr>");
+        document.write("<td>" + ary[a] + "</td>");
+        document.write("</tr>"); 
+    }
+    document.write("</table>");
+ 
+</script> -->
+
+<!-- <script>
+    var ttl = prompt("Enter Total no of values");
+    var t = ttl - 1 ;
+    var ary = new Array(t);
+   for(var x = 0; x < t; x++){
+    ary[x] = prompt("Enter The User name");
+   }
+   
+    document.write("<table border='1'>");
+    document.write("<tr><th>Value</th></tr>");
+    for (var a = 0; a < ary.length; a++) {
+        document.write("<tr>");
+        document.write("<td>" + ary[a] + "</td>");
+        document.write("</tr>"); 
+       
+    }
+    document.write("</table>");
+ 
+</script> -->
+<!-- Multi dimaentinal -->
+<!-- <script>
+    var ary = [
+        ['Basit', 2, 'TS-Developer', 'Full Stack Developer'],
+        ['Abdul Basit', 4, 'TS-Developer', 'App Developer'],
+        ['Sabrii', 6, 'TS-Developer', 'Game Developer'],
+        ['Sara', 3, 'TS-Developer', 'Full Stack Developer'],
+        ['Yamin', 5, 'TS-Developer', 'Full Stack Developer']
+    ];
+    document.write("<table border='1'>");
+    document.write("<tr><th>Name</th><th>Experience (years)</th><th>Role</th><th>Specialization</th></tr>");
+    for (var a = 0; a < ary.length; a++) {
+        document.write("<tr>");
+        for (var b = 0; b < ary[a].length; b++) {
+            document.write("<td>" + ary[a][b] + "</td>");
+        }
+        document.write("</tr>");
+    }
+    document.write("</table>");
+</script> -->
+
+
+<!-- delete -->
+<!-- <script>
+    var ary = [10, 20, 30, 40, 50];
+    document.write(ary+ '<br>');
+    ary[2] = 60;
+    
+    document.write(ary + '<br>'); 
+    delete ary[3];
+
+    document.write(ary+ '<br>'); 
+    document.write(ary[3]); 
+</script> -->
+
+
+<!-- sort()
+reverse() -->
+
+
+<!-- <script>
+    var a = [20, 40, 30, 10, 5, 6];
+    document.write(a + '<br>');
+    a.sort(function(x, y) {
+        return x + y; 
+    });
+    document.write(a); 
+</script>
+ -->
+
+
+<!-- pop()
+push() -->
+
+<!-- <script>
+    var a = [ 20,40,30, 10];
+    document.write(a + '<br>');
+    a.pop();
+    document.write(a + '<br>');
+    a.push('100');
+    document.write(a);
+
+</script> -->
+
+
+
+<!-- Shift()
+Unshift() -->
+
+
+<!-- <script>
+    var a = [ 20,40,30, 10];
+    document.write(a + '<br>');
+    a.shift();
+    document.write(a + '<br>');
+    a.unshift('100');
+    document.write(a);
+
+</script> -->
+
+<!-- Concat()
+Join() -->
+
+
+
+<!-- <script>
+    var a = [ 'Abdul','Basit','Sabrii'];
+    document.write(a + '<br>');
+  var b = a.concat('James','Bond','actor');
+  document.write(b);
+
+</script>  -->
+
+<!-- <script>
+    var a = ['Abdul', 'Basit', 'Sabrii'];
+    var b = ['James', 'Bond', 'actor'];
+    var c = ['Tom', 'Cruise', 'actor'];
+    var d = a.concat(b, c);
+    document.write(d+ '<br>');
+    var f = d.join("-");
+    document.write(f);
+
+</script> -->
+
+<!-- Slice & Splice -->
+
+
+<!-- <script>
+    var a = ['Abdul', 'Basit', 'Sabrii'];
+    
+    document.write(a +" <br>");
+    var b = a.slice(0,1);
+    document.write(b);
+
+</script> -->
+
+<!-- <script>
+    var a = ['Abdul', 'Basit', 'Sabrii','Sabrii','Sabrii'];
+    document.write(a +" <br>");
+   a.splice(3, 3,"Tom","Cruse","Cruse","Cruse");
+    document.write(a);
+</script> -->
+
+
+<!-- Array() method
+isArray() -->
+
+
+
+<!-- <script>
+    var a = ['Abdul', 'Basit', 'Sabrii'];
+    // var a = 10;
+    document.write(a+'<br>');
+    var b =Array.isArray(a);
+   
+    document.write(b+'<br>');
+</script> -->
+
+
+
+<!-- indexOf() 
+lastindexOf() 
+for search-->
+
+
+
+<!-- <script>
+    var a = ['Abdul', 'Basit', 'Sabrii','Tom', 'Coruse', 'Sabrii'];
+    
+    document.write(a+'<br>');
+    var b = a.indexOf("Sabrii",3);
+   
+    document.write(b+'<br>');
+</script> -->
+
+
+<!-- <script>
+    var a = ['Abdul', 'Basit', 'Sabrii','Tom', 'Coruse', 'Sabrii','Tom', 'Coruse',];
+    
+    document.write(a+'<br>');
+    var b = a.lastIndexOf("Sabrii");
+   
+    document.write(b+'<br>');
+</script> -->
+
+
+
+<!-- Include() -->
+
+
+
+<!-- <script>
+    var a = ['Abdul', 'Basit', 'Sabrii','Tom', 'Coruse', 'Sabrii'];
+    
+    document.write(a+'<br>');
+    var b = a.includes("Sabrii");
+   
+    document.write(b+'<br>');
+</script> -->
+
+
+<!-- Some() find big value 
+Every()
+ -->
+
+<!-- <script>
+    var a = [10, 14, 18,20,30, 5];
+    
+    document.write(a+'<br>');
+    var b = a.some(checkA);
+    document.write(b+'<br>');
+
+    function checkA(c){
+        return c >= 18;
+
+    }
+</script> -->
+
+
+<!-- <script>
+    var a = [20, 25, 18,20,30, 25];
+    
+    document.write(a+'<br>');
+    var b = a.every(checkA);
+    document.write(b+'<br>');
+
+    function checkA(age){
+        return age >= 18;
+
+    }
+</script> -->
+
+
+
+<!-- Find() & findindex()  -->
+
+<!-- <script>
+    var a = [5,15, 25, 18,20,30, 25];
+    
+    document.write(a+'<br>');
+    var b = a.findIndex(checkA);
+    document.write(b+'<br>');
+
+    function checkA(age){
+        return age >= 18;
+
+    }
+</script> -->
+<!-- 
+filter() -->
+
+<!-- <script>
+    var a = [5, 25, 18,20,6, 25];
+    
+    document.write(a+'<br>');
+    var b = a.filter(checkA);
+    document.write(b+'<br>');
+
+    function checkA(age){
+        return age >= 18;
+
+    }
+</script> -->
+
+
+
+<!-- toString()
+valueOf() show same value of array
+Fill() -->
+
+
+
+<!-- <script>
+    var a = [5, 25, 18,20,6, 25];
+    
+    document.write(a+'<br>');
+    var b = a.toString();
+    document.write(b+'<br>');
+
+
+    var c =Array.isArray(b);
+   document.write(c+'<br>');
+
+
+</script> -->
+
+<!-- <script>
+    var a = [5, 25, 18,20,6, 25];
+    
+    document.write(a+'<br>');
+    var b = a.fill("basit");
+    document.write(b+'<br>');
+</script> -->
+
+
+
+<!-- forEach() -->
+
+
+
+
+
+<!-- <script>
+    var a = [5, 25, 18,20,6, 25];
+    
+    document.write(a+'<br>');
+    
+     a.forEach(function(value){
+        document.write(value + '<br>')
+     });
+    
+</script> -->
+
+<!-- <script>
+    var a = [5, 25, 18,20,6, 25];
+document.write(a.valueOf());
+
+</script> -->
+
+
+
+
+<!-- object -->
+
+<!-- <script>
+    var a = {
+        fname: 'Abdul',
+        lname: 'Basit',
+        student_name: 'Abdul Basit',
+        class: 'MBA',
+        rollno:'8',
+        collage: 'OCUK', //property for variable
+        friends: ['x','y','z'],
+        fulname: function(){ //method for function
+            return this.fname+' '+ this.lname;
+        }
+    }
+
+    document.write(a.fulname());
+</script> -->
+
+<!-- new object -->
+
+
+<!-- <script>
+    var a = new Object();
+        a.fname= 'Abdul';
+        a.lname= 'Basit';
+        a.student_name= 'Abdul Basit';
+        a.class= 'MBA';
+        a.rollno='8';
+        a.collage= 'OCUK'; //property for variable
+        a.friends= ['x','y','z'];
+        a.fulname= function(){ //method for function
+            return this.fname+' '+ this.lname;
+        };
+    
+
+    document.write(a.fulname());
+</script> -->
+
+
+
+<!-- array of object -->
+
+
+<!-- 
+<script>
+    var a = [{
+        fname: 'Abdul',
+        lname: 'Basit',
+        student_name: 'Abdul Basit',
+        class: 'MBA',
+        rollno: '8',
+        collage: 'OCUK', // property for variable
+        friends: ['x', 'y', 'z'],
+        fulname: function () { // method for function
+            return this.fname + ' ' + this.lname;
+        }
+    }];
+
+    console.log(a); // Logs the whole array
+
+    for (var b = 0; b < a.length; b++) {
+        document.write(
+            "Full Name: " + a[b].fulname() + "<br>" +
+            "Class: " + a[b].class + "<br>" +
+            "Roll No: " + a[b].rollno + "<br>" +
+            "College: " + a[b].collage + "<br>" +
+            "Friends: " + a[b].friends.join(" ") + "<br><br>"
+        );
+    }
+</script> -->
+
+
+
+<!-- Const variable About Constant variable how can we change its value
+With array & Object -->
+
+
+<!-- <script>
+    const a = {
+        f_name :'Abdul',
+        l_name: 'Basit',
+        s_name: 'khan',
+        ful_name: function(){
+            return this.f_name +' '+this.l_name +' '+this.s_name;
+        }
+    }
+
+    a.s_name = "Sabrii"
+    document.write(a.ful_name());
+</script> -->
+
+
+
+<!-- for/in loop -->
+
+
+<!-- <script>
+    const a = {
+        f_name: 'Abdul',
+        l_name: 'Basit',
+        s_name: 'Khan',
+        ful_name: function () {
+            return this.f_name + " " + this.l_name + " " + this.s_name;
+        }
+    };
+
+    for (var b in a) {
+        if (typeof a[b] === "function") {
+            document.write(a[b]() + '<br>'); 
+        } else {
+            document.write(a[b] + '<br>');
+        }
+    }
+</script> -->
+
+
+<!-- map() is use to change data in array-->
+
+<!-- <script>
+    var a = [5, 15, 25, 18, 20, 30, 25];
+
+    document.write(a + '<br>');
+
+    var b = a.map(okay);
+    document.write(b);
+    function okay(x) {
+        return x + 2;
+    }
+
+</script> -->
+
+
+
+
+<!-- <script>
+    var a = [
+
+        { name: 'Abdul Basit', rollno: 8,collage:'Ts-Developer',class:'Full Stack Developer'},
+        { name: 'Abdul ', rollno: 8,collage:'Ts-Developer',class:'Full Stack Developer'},
+        { name: 'Basit', rollno: 8,collage:'Ts-Developer',class:'Full Stack Developer'},
+        { name: 'Sabrii', rollno: 8,collage:'Ts-Developer',class:'Full Stack Developer'},
+        { name: 'TS', rollno: 8,collage:'Ts-Developer',class:'Full Stack Developer'},
+
+
+
+    ]
+
+    // document.write(a + '<br>');
+
+    var b = a.map(okay);
+    document.write(b);
+   
+    function okay(x) {
+        
+        return  x.name + x.rollno +' ' + x.collage+' ' +x.class + '<br>'  ;
+    }
+   
+
+</script> -->
+
+
+
+
+<!-- <script>
+    var a = [
+        { name: 'Abdul Basit', rollno: 8, collage: 'Ts-Developer', class: 'Full Stack Developer' },
+        { name: 'Abdul ', rollno: 8, collage: 'Ts-Developer', class: 'Full Stack Developer' },
+        { name: 'Basit', rollno: 8, collage: 'Ts-Developer', class: 'Full Stack Developer' },
+        { name: 'Sabrii', rollno: 8, collage: 'Ts-Developer', class: 'Full Stack Developer' },
+        { name: 'TS', rollno: 8, collage: 'Ts-Developer', class: 'Full Stack Developer' }
+    ];
+
+    //  table start from here 
+    var tableHTML = "<table border='1' cellspacing='0' cellpadding='5'>";
+
+    //  table header
+    tableHTML += "<tr><th>Name</th><th>Roll No</th><th>Collage</th><th>Class</th></tr>";
+
+    // Generate rows dynamically
+    tableHTML += a.map(function (x) {
+        return `<tr>
+                    <td>${x.name}</td>
+                    <td>${x.rollno}</td>
+                    <td>${x.collage}</td>
+                    <td>${x.class}</td>
+                </tr>`;
+    }).join('');
+
+    // Close the table
+    tableHTML += "</table>";
+
+    // print table
+    document.write(tableHTML);
+</script> -->
+
+
+
+<!-- string methods -->
+<!-- lenght()  to get lenght of variable-->
+<!-- lenght is a property other all are methods -->
+
+
+<!-- <script>
+    var a ="Hello my name is Abdul Basit Sabrii";
+   b= a.length;
+   document.write(b);
+ </script> -->
+
+
+<!-- toLowerCase() -->
+
+
+<!-- <script>
+    var a ="Hello my name is Abdul Basit Sabrii";
+   b= a.toLowerCase();
+   document.write(b);
+ </script> -->
+
+
+<!-- toUpperCase -->
+
+
+<!-- <script>
+    var a ="Hello my name is Abdul Basit Sabrii";
+   b= a.toUpperCase();
+   document.write(b);
+ </script> -->
+
+
+<!-- include (match words) -->
+
+
+<!-- <script>
+    var a ="Hello my name is Abdul Basit Sabrii";
+   b= a.includes("is");
+   document.write(b);
+ </script> -->
+
+
+<!-- startwith() endswith() search only first and last words -->
+
+
+
+<!-- <script>
+    var a ="Hello my name is Abdul Basit Sabrii";
+   b= a.startsWith("Hello");
+   document.write(b);
+ </script>
+
+<script>
+    var a ="Hello my name is Abdul Basit Sabrii";
+   b= a.endsWith("rii");
+   document.write(b);
+ </script> -->
+
+
+<!-- search() it return index of charachter -->
+
+<!-- <script>
+    var a ="Hello my name is Abdul Basit Sabrii";
+   b= a.search("ii");
+   document.write(b);
+ </script> -->
+
+
+
+<!-- indexOf it return index of charachter -->
+<!-- <script>
+    var a ="Hello my name is Abdul Basit Sabrii,My subject is Web development";
+   b= a.indexOf('is');
+   document.write(b);
+ </script> -->
+
+
+<!-- lastIndexOf it return index of charachter from last -->
+<!-- <script>
+    var a ="Hello my name is Abdul Basit Sabrii,My subject is Web development";
+   b= a.lastIndexOf('is');
+   document.write(b);
+ </script> -->
+
+<!-- replace just replace one word-->
+
+<!-- <script>
+    var a ="Hello my name is Abdul Basit Sabrii,My subject is Web development";
+   b= a.replace('Sabrii','Khan');
+   document.write(b);
+ </script> -->
+
+<!-- trim remove extra spaces from right and left side -->
+
+<!-- <script>
+    var a ="    Abdul Basit   ";
+   b= a.trim();
+ alert(b);
+ </script> -->
+
+
+<!-- charAt() is use to fetch charachter with index -->
+
+
+<!-- <script>
+    var a ="Hello my name is Abdul Basit Sabrii,My subject is Web development";
+   b= a.charAt('20');
+   document.write(b);
+ </script> -->
+
+<!-- charCOdeat() it return ascci code`
+ fromcharcode() -->
+
+<!-- <script>
+    var a ="Hello my name is Abdul Basit Sabrii,My subject is Web development";
+   b= a.charCodeAt('20');
+   document.write(b);
+ </script> -->
+
+<!-- <script>
+   var a = String.fromCharCode(117);
+   document.write(a);
+ </script> -->
+
+
+
+<!-- concat is use to concat 2 strings -->
+
+
+<!-- <script>
+    var a = " Its Very Cool Day,";
+    var b = "keep your body warm";
+    var c = a.concat(b);
+    document.write(c);
+ </script> -->
+
+
+<!-- split is use to break string into array -->
+
+<!-- <script>
+    var a = "this is my  book"
+    var b = a.split(" ");
+    document.write(b);
+ </script> -->
+
+
+
+
+<!-- repeat()  it repeat sting many time -->
+
+
+
+<!-- <script>
+    var a = "this is my  book"
+    var b = a.repeat(3);
+    document.write(b);
+ </script> -->
+
+
+<!-- slice()  return specific chharacters from give 2 index from to end -->
+
+
+
+<!-- <script>
+    var a = "this is my  book"
+    var b = a.slice(1,18);
+    document.write(b);
+ </script> -->
+
+
+<!-- substr() it return from only one index to end -->
+
+<!-- <script>
+    var a = "this is my  book"
+    var b = a.substr(1);
+    document.write(b);
+ </script> -->
+
+<!-- substring not get given index it get back index of last -->
+<!-- <script>
+    var a = "this is my  book"
+    var b = a.substring(1);
+    document.write(b);
+ </script> -->
+
+<!-- it is just check  the type if string -->
+<!-- <script>
+    var a = 15;
+    var b = a.toString();
+    document.write(b + 30);
+
+ </script> -->
+
+
+<!-- number methods it is convert string to number -->
+
+
+<!-- <script>
+    var a = '20';
+    var b = Number(a);
+    document.write(b + 10);
+
+ </script> -->
+
+
+<!-- parseint() it is convert float value to interger -->
+
+<!-- <script>
+var a = '20.2';
+var b = parseInt(a);
+
+document.write(b );
+
+</script> -->
+
+
+
+<!-- parseint() it is show float value -->
+
+
+<!-- <script>
+    var a = 20.1;
+    var b = parseFloat(a);
+    
+    document.write(b );
+    
+    </script> -->
+
+
+
+<!-- isFinite() is return only 2 value true or false. check finite -->
+
+
+<!-- <script>
+    var a = 'h';
+    var b = Number.isFinite(a);
+
+    document.write(b);
+
+</script> -->
+
+
+<!-- in integer is check variable value is integer or not -->
+
+
+<!-- <script>
+    var a = 10;
+    var b = Number.isInteger(a);
+
+    document.write(b);
+
+</script> -->
+
+
+<!-- toFixed() method is use to show number of values in float  -->
+
+<!-- <script>
+    var a = 10.234234;
+    var b = a.toFixed(2);
+
+    document.write(b);
+
+</script> -->
+
+
+<!-- toprecision is return total degits -->
+
+<!-- <script>
+    var a = 10.234234;
+    var b = a.toPrecision(3);
+
+    document.write(b);
+</script> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .xyz{
+    
+            color:green;
+        }
+        .vbs{
+            font-size: 80px;
+        }
+    </style>
+</head>
+<body>
+    <main id="container">
+    <h1 id="header"  >Hello World
+        <a href="https://techsabrii.com"></a>
+    </h1>
+
+</main>
+    <script src="js/script.js"></script>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+        }
+        .carousel-container {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            background: white;
+        }
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel img {
+            width: 100%;
+            
+            object-fit:fill;
+            border-radius: 10px;
+        }
+        .btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            font-size: 24px;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .prev { left: 15px; }
+        .next { right: 15px; }
+
+       
+        .dots {
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 5px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .active, .dot:hover {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="carousel-container">
+        <div class="carousel">
+            <img src="img/a-1.png" alt="Image 1">
+            <img src="img/a-2.jpg" alt="Image 2">
+            <img src="img/a-3.jpg" alt="Image 3">
+            <img src="img/a-4.jpg" alt="Image 1">
+            <img src="img/a-5.jpg" alt="Image 2">
+        </div>
+        <button class="btn prev" onclick="prevSlide()">&#10094;</button>
+        <button class="btn next" onclick="nextSlide()">&#10095;</button>
+
+       
+        <div class="dots"></div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        const carousel = document.querySelector(".carousel");
+        const images = document.querySelectorAll(".carousel img");
+        const dotsContainer = document.querySelector(".dots");
+        const totalImages = images.length;
+
+        
+        images.forEach((_, index) => {
+            const dot = document.createElement("span");
+            dot.classList.add("dot");
+            dot.setAttribute("onclick", `goToSlide(${index})`);
+            dotsContainer.appendChild(dot);
+        });
+
+        const dots = document.querySelectorAll(".dot");
+
+        function updateCarousel() {
+            const offset = -currentIndex * 100;
+            carousel.style.transform = `translateX(${offset}%)`;
+            updateDots();
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalImages;
+            updateCarousel();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+            updateCarousel();
+        }
+
+        function goToSlide(index) {
+            currentIndex = index;
+            updateCarousel();
+        }
+
+        function updateDots() {
+            dots.forEach(dot => dot.classList.remove("active"));
+            dots[currentIndex].classList.add("active");
+        }
+
+        updateDots();
+
+       
+        setInterval(nextSlide, 9000);
+    </script>
+
+</body>
+</html> -->
+
+
+<!-- <div id="container">
+    <p id="child">I am inside a div</p>
+</div>
+
+<script>
+    let child = document.getElementById("child");
+
+    console.log(child.parentElement); // Returns <div id="container">
+</script> -->
+
+<!-- <div id="container">
+    <p id="child">I am inside a div</p>
+</div>
+
+<script>
+    let child = document.getElementById("child");
+    let parent = child.parentElement;
+    
+    parent.style.backgroundColor = "lightblue";
+    parent.style.padding = "20px";
+    parent.style.border = "2px solid blue";
+</script> -->
+
+<!-- child elements -->
+
+<!-- <div id="parent">
+    <p>First child</p>
+    <p>Second child</p>
+    <p>Third child</p>
+</div>
+
+<script>
+    let parent = document.getElementById("parent");
+
+    console.log(parent.children); // Returns an HTMLCollection of child elements
+    console.log(parent.firstElementChild); // First child element <p>First child</p>
+    console.log(parent.lastElementChild);  // Last child element <p>Third child</p>
+</script> -->
+
+
+<!-- sibling elements -->
+
+<div>
+    <!-- <p id="first">First paragraph</p>
+    <p id="second">Second paragraph</p>
+    <p id="third">Third paragraph</p>
+</div>
+
+<script>
+    let second = document.getElementById("second");
+
+    console.log(second.previousElementSibling); // First <p> First paragraph
+    console.log(second.nextElementSibling);     // Third <p> Third paragraph
+</script> -->
+
+
+
+<!-- Yes! Here are all the relative elements you can use in JavaScript to navigate the DOM:
+
+1. Parent Elements
+element.parentElement → Selects the immediate parent of an element.
+element.closest("selector") → Finds the nearest ancestor that matches a selector.
+2. Child Elements
+element.children → Returns all child elements (excluding text nodes).
+element.firstElementChild → Selects the first child element.
+element.lastElementChild → Selects the last child element.
+element.childNodes → Returns all child nodes (including text, comments, etc.).
+3. Sibling Elements
+element.nextElementSibling → Selects the next sibling element.
+element.previousElementSibling → Selects the previous sibling element. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f8f9fa;
+        }
+
+        .accordion {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .accordion-item {
+            background: #fff;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .accordion-header {
+            background: #007bff;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            width: 100%;
+            text-align: left;
+            transition: background 0.3s;
+        }
+
+        .accordion-header:hover {
+            background: #0056b3;
+        }
+
+        .accordion-content {
+            padding: 0 15px;
+            background: white;
+            display: none;
+            overflow: hidden;
+        }
+
+        .accordion-content p {
+            padding: 15px 0;
+            margin: 0;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="accordion">
+        <div class="accordion-item">
+            <button class="accordion-header">Section 1</button>
+            <div class="accordion-content">
+                <p>This is the content of Section 1.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header">Section 2</button>
+            <div class="accordion-content">
+                <p>This is the content of Section 2.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header">Section 3</button>
+            <div class="accordion-content">
+                <p>This is the content of Section 3.</p>
+            </div>
+        </div> 
+    </div>
+
+    <script>
+        document.querySelectorAll(".accordion-header").forEach(button => {
+            button.addEventListener("click", function() {
+                const content = this.nextElementSibling;
+                
+             
+                document.querySelectorAll(".accordion-content").forEach(item => {
+                    if (item !== content) {
+                        item.style.display = "none";
+                    }
+                });
+
+             
+                content.style.display = (content.style.display === "block") ? "none" : "block";
+            });
+        });
+    </script>
+
+</body>
+</html>

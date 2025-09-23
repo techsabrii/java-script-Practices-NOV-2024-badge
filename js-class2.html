@@ -1,0 +1,74 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array of Objects</title>
+</head>
+<body>
+    <h2>Array of Objects Example</h2>
+    <div id="output"></div>
+
+    <script>
+        // Array of objects
+        let users = [{ name: "Ali", age: 25, city: "Karachi" },{ name: "Sara", age: 22, city: "Lahore" },{ name: "Ahmed", age: 28, city: "Islamabad" }
+        ];
+
+        let result = "";
+        result += '<table border="1"><tr><th>Index</th><th>Name</th><th>Age</th><th>City</th></tr>';
+        users.forEach(function(user, index) {
+            result += '<tr>';
+            result += "<td>User " + (index + 1) + "</td>";
+            result += "<td>" + user.name + "</td>";
+            result += "<td>" + user.age + "</td>";
+            result += "<td>" + user.city + "</td>";
+            result += '</tr>';
+        });
+        result += '</table>';
+
+        document.getElementById("output").innerHTML = result;
+    </script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop with Objects</title>
+</head>
+<body>
+    <h2>Users Table (For Loop)</h2>
+    <div id="output"></div>
+
+    <script>
+        // Array of objects
+        let users = [
+            { name: "Ali", age: 25, city: "Karachi" },
+            { name: "Sara", age: 22, city: "Lahore" },
+            { name: "Ahmed", age: 28, city: "Islamabad" }
+        ];
+
+        result = users[0].name;
+        // let result = "";
+        // result += '<table border="1" cellpadding="8"><tr><th>Index</th><th>Name</th><th>Age</th><th>City</th></tr>';
+
+        // // ✅ For loop
+        // for (let i = 0; i < users.length; i++) {
+        //     result += "<tr>";
+        //     result += "<td>User " + (i + 1) + "</td>";
+        //     result += "<td>" + users[i].name + "</td>";
+        //     result += "<td>" + users[i].age + "</td>";
+        //     result += "<td>" + users[i].city + "</td>";
+        //     result += "</tr>";
+        // }
+
+        // result += "</table>";
+
+        document.getElementById("output").innerHTML = result;
+    </script>
+</body>
+</html>

@@ -71,16 +71,16 @@
 
     <!-- <script>
     var a, b, c;
-    a = Number(prompt("Enter 1st Value")); 
-    b = Number(prompt("Enter 2nd Value")); 
+    a = Number(prompt("Enter 1st Value"));
+    b = Number(prompt("Enter 2nd Value"));
 
     function sum() {
-        c = a + b; 
+        c = a + b;
         document.getElementById("result").innerHTML = "Sum of " + a + " + " + b + " = " + c;
     }
 
-    sum(); 
-</script>    
+    sum();
+</script>
     <label>Enter Any Number:</label>
     <input id="no_input" type="text"><br />
     <button onclick="odd_even()">Click me</button>
@@ -106,8 +106,8 @@
     <label for="num2">Enter 2nd Value:</label>
     <input type="number" id="num2"> <br><br>
 
-    <button onclick="sum()">Calculate Sum</button> 
-    <p id="result"></p> 
+    <button onclick="sum()">Calculate Sum</button>
+    <p id="result"></p>
 
     <script>
         function sum() {
@@ -134,7 +134,7 @@
     <script>
         function name(firstname = "Abdul ", lastname = "Basit"){
             document.write("My Name is " + firstname +" "+lastname);
-            
+
         }
         name("Abdul","Basit")
     </script>
@@ -152,7 +152,7 @@
         function name(firstname = "Abdul ", lastname = "Basit"){
             a= Number(firstname) + Number(lastname);
             document.write("My Name is " + firstname +" "+lastname + " + " + a);
-            
+
         }
         name("4","6")
     </script>
@@ -181,7 +181,7 @@
     var mid = mid( total, 2);
     document.write(mid);
     </script>
-    
+
 </body>
 </html> -->
 
@@ -191,14 +191,14 @@
     let number = 1;
 
 while (number <= 15) {
-    document.write(number +" Hello Sir<br>");  
-    number++;             
+    document.write(number +" Hello Sir<br>");
+    number++;
 }
 
 </script> -->
 
 <!-- <script>
-  
+
   let number = 1;
     do {
         document.write(number + " Hello Sir<br>");
@@ -210,14 +210,14 @@ while (number <= 15) {
         if(a==3){
             document.write('Welcome<br>');
             break;
-            
+
         }
         document.write(a + ' Hello Sir <br>');
     }
 </script> -->
 
-<!-- <script> 
-    
+<!-- <script>
+
     for(a=1; a<=10; a++){
         if(a % 2 == 0){
             document.write( a +' Is Even Number <br>');
@@ -229,25 +229,25 @@ while (number <= 15) {
 </script> -->
 
 <!-- <script>
-    document.write('<table border="1" width="40%">');  
+    document.write('<table border="1" width="40%">');
     for (var a = 1; a <= 100; a = a + 10) {
-        document.write('<tr>');  
+        document.write('<tr>');
         for (var b = a; b < a + 10; b++) {
-            document.write('<td>' + b + '</td>'); 
+            document.write('<td>' + b + '</td>');
         }
-        document.write('</tr>'); 
+        document.write('</tr>');
     }
-    document.write('</table>');  
+    document.write('</table>');
 </script> -->
 
-<!-- 
+<!--
 <script>
     for(var a = 1; a <= 100; a = a +10){
         for(var b = a; b < a + 10; b++){
             document.write(b+' ');
         }
         document.write("<br>");
-        
+
     }
 </script>
 <br>
@@ -257,7 +257,7 @@ while (number <= 15) {
             document.write(b+' ');
         }
         document.write("<br>");
-        
+
     }
 </script> -->
 
@@ -267,22 +267,22 @@ while (number <= 15) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diamond Pattern</title>
-   
+
 </head>
 <body>
     <div class="pattern">
         <script>
-            var n = 5; 
+            var n = 5;
             for (var i = 1; i <= n; i++) {
-                
+
                 for (var j = 1; j <= (2 * i - 1); j++) {
                     document.write("*");
                 }
                 document.write("<br>");
             }
-            
+
             for (var i = n - 1; i >= 1; i--) {
-              
+
                 for (var j = 1; j <= (2 * i - 1); j++) {
                     document.write("*");
                 }
@@ -303,14 +303,14 @@ while (number <= 15) {
 
 <!-- <script>
     var ary = [10, 20, 30, 40, 50];
-     
+
     document.write("<table border='1'>");
     document.write("<tr><th>Value</th></tr>");
     for (var a = 0; a < ary.length; a++) {
         document.write("<tr>");
         document.write("<td>" + ary[a] + " </td>");
-        document.write("</tr>"); 
-       
+        document.write("</tr>");
+
     }
     document.write("</table>");
 
@@ -320,13 +320,13 @@ while (number <= 15) {
 
 <!-- <script>
     var ary = [10, 20, 30, 40, 50];
-    var sum = 0;  
+    var sum = 0;
     document.write("<table border='1'>");
     document.write("<tr><th>Value</th></tr>");
     for (var a = 0; a < ary.length; a++) {
         document.write("<tr>");
         document.write("<td>" + ary[a] + "</td>");
-        document.write("</tr>"); 
+        document.write("</tr>");
         sum += ary[a];
     }
     document.write("</table>");
@@ -339,16 +339,16 @@ while (number <= 15) {
     ary[1] = 20;
     ary[2] = 40;
     ary[5] = 60;
-   
+
     document.write("<table border='1'>");
     document.write("<tr><th>Value</th></tr>");
     for (var a = 0; a < ary.length; a++) {
         document.write("<tr>");
         document.write("<td>" + ary[a] + "</td>");
-        document.write("</tr>"); 
+        document.write("</tr>");
     }
     document.write("</table>");
- 
+
 </script> -->
 
 <!-- <script>
@@ -358,17 +358,17 @@ while (number <= 15) {
    for(var x = 0; x < t; x++){
     ary[x] = prompt("Enter The User name");
    }
-   
+
     document.write("<table border='1'>");
     document.write("<tr><th>Value</th></tr>");
     for (var a = 0; a < ary.length; a++) {
         document.write("<tr>");
         document.write("<td>" + ary[a] + "</td>");
-        document.write("</tr>"); 
-       
+        document.write("</tr>");
+
     }
     document.write("</table>");
- 
+
 </script> -->
 <!-- Multi dimaentinal -->
 <!-- <script>
@@ -397,12 +397,12 @@ while (number <= 15) {
     var ary = [10, 20, 30, 40, 50];
     document.write(ary+ '<br>');
     ary[2] = 60;
-    
-    document.write(ary + '<br>'); 
+
+    document.write(ary + '<br>');
     delete ary[3];
 
-    document.write(ary+ '<br>'); 
-    document.write(ary[3]); 
+    document.write(ary+ '<br>');
+    document.write(ary[3]);
 </script> -->
 
 
@@ -414,9 +414,9 @@ reverse() -->
     var a = [20, 40, 30, 10, 5, 6];
     document.write(a + '<br>');
     a.sort(function(x, y) {
-        return x + y; 
+        return x + y;
     });
-    document.write(a); 
+    document.write(a);
 </script>
  -->
 
@@ -479,7 +479,7 @@ Join() -->
 
 <!-- <script>
     var a = ['Abdul', 'Basit', 'Sabrii'];
-    
+
     document.write(a +" <br>");
     var b = a.slice(0,1);
     document.write(b);
@@ -504,34 +504,34 @@ isArray() -->
     // var a = 10;
     document.write(a+'<br>');
     var b =Array.isArray(a);
-   
+
     document.write(b+'<br>');
 </script> -->
 
 
 
-<!-- indexOf() 
-lastindexOf() 
+<!-- indexOf()
+lastindexOf()
 for search-->
 
 
 
 <!-- <script>
     var a = ['Abdul', 'Basit', 'Sabrii','Tom', 'Coruse', 'Sabrii'];
-    
+
     document.write(a+'<br>');
     var b = a.indexOf("Sabrii",3);
-   
+
     document.write(b+'<br>');
 </script> -->
 
 
 <!-- <script>
     var a = ['Abdul', 'Basit', 'Sabrii','Tom', 'Coruse', 'Sabrii','Tom', 'Coruse',];
-    
+
     document.write(a+'<br>');
     var b = a.lastIndexOf("Sabrii");
-   
+
     document.write(b+'<br>');
 </script> -->
 
@@ -543,21 +543,21 @@ for search-->
 
 <!-- <script>
     var a = ['Abdul', 'Basit', 'Sabrii','Tom', 'Coruse', 'Sabrii'];
-    
+
     document.write(a+'<br>');
     var b = a.includes("Sabrii");
-   
+
     document.write(b+'<br>');
 </script> -->
 
 
-<!-- Some() find big value 
+<!-- Some() find big value
 Every()
  -->
 
 <!-- <script>
     var a = [10, 14, 18,20,30, 5];
-    
+
     document.write(a+'<br>');
     var b = a.some(checkA);
     document.write(b+'<br>');
@@ -571,7 +571,7 @@ Every()
 
 <!-- <script>
     var a = [20, 25, 18,20,30, 25];
-    
+
     document.write(a+'<br>');
     var b = a.every(checkA);
     document.write(b+'<br>');
@@ -588,7 +588,7 @@ Every()
 
 <!-- <script>
     var a = [5,15, 25, 18,20,30, 25];
-    
+
     document.write(a+'<br>');
     var b = a.findIndex(checkA);
     document.write(b+'<br>');
@@ -598,12 +598,12 @@ Every()
 
     }
 </script> -->
-<!-- 
+<!--
 filter() -->
 
 <!-- <script>
     var a = [5, 25, 18,20,6, 25];
-    
+
     document.write(a+'<br>');
     var b = a.filter(checkA);
     document.write(b+'<br>');
@@ -624,7 +624,7 @@ Fill() -->
 
 <!-- <script>
     var a = [5, 25, 18,20,6, 25];
-    
+
     document.write(a+'<br>');
     var b = a.toString();
     document.write(b+'<br>');
@@ -638,7 +638,7 @@ Fill() -->
 
 <!-- <script>
     var a = [5, 25, 18,20,6, 25];
-    
+
     document.write(a+'<br>');
     var b = a.fill("basit");
     document.write(b+'<br>');
@@ -654,13 +654,13 @@ Fill() -->
 
 <!-- <script>
     var a = [5, 25, 18,20,6, 25];
-    
+
     document.write(a+'<br>');
-    
+
      a.forEach(function(value){
         document.write(value + '<br>')
      });
-    
+
 </script> -->
 
 <!-- <script>
@@ -706,7 +706,7 @@ document.write(a.valueOf());
         a.fulname= function(){ //method for function
             return this.fname+' '+ this.lname;
         };
-    
+
 
     document.write(a.fulname());
 </script> -->
@@ -716,7 +716,7 @@ document.write(a.valueOf());
 <!-- array of object -->
 
 
-<!-- 
+<!--
 <script>
     var a = [{
         fname: 'Abdul',
@@ -781,7 +781,7 @@ With array & Object -->
 
     for (var b in a) {
         if (typeof a[b] === "function") {
-            document.write(a[b]() + '<br>'); 
+            document.write(a[b]() + '<br>');
         } else {
             document.write(a[b] + '<br>');
         }
@@ -824,12 +824,12 @@ With array & Object -->
 
     var b = a.map(okay);
     document.write(b);
-   
+
     function okay(x) {
-        
+
         return  x.name + x.rollno +' ' + x.collage+' ' +x.class + '<br>'  ;
     }
-   
+
 
 </script> -->
 
@@ -845,7 +845,7 @@ With array & Object -->
         { name: 'TS', rollno: 8, collage: 'Ts-Developer', class: 'Full Stack Developer' }
     ];
 
-    //  table start from here 
+    //  table start from here
     var tableHTML = "<table border='1' cellspacing='0' cellpadding='5'>";
 
     //  table header
@@ -1093,9 +1093,9 @@ document.write(b );
 <!-- <script>
     var a = 20.1;
     var b = parseFloat(a);
-    
+
     document.write(b );
-    
+
     </script> -->
 
 
@@ -1154,7 +1154,7 @@ document.write(b );
     <title>Document</title>
     <style>
         .xyz{
-    
+
             color:green;
         }
         .vbs{
@@ -1193,7 +1193,7 @@ document.write(b );
             display: flex;
             justify-content: center;
             align-items: center;
-          
+
         }
         .carousel-container {
             width: 100%;
@@ -1209,7 +1209,7 @@ document.write(b );
         }
         .carousel img {
             width: 100%;
-            
+
             object-fit:fill;
             border-radius: 10px;
         }
@@ -1232,7 +1232,7 @@ document.write(b );
         .prev { left: 15px; }
         .next { right: 15px; }
 
-       
+
         .dots {
             text-align: center;
             padding: 10px;
@@ -1269,7 +1269,7 @@ document.write(b );
         <button class="btn prev" onclick="prevSlide()">&#10094;</button>
         <button class="btn next" onclick="nextSlide()">&#10095;</button>
 
-       
+
         <div class="dots"></div>
     </div>
 
@@ -1280,7 +1280,7 @@ document.write(b );
         const dotsContainer = document.querySelector(".dots");
         const totalImages = images.length;
 
-        
+
         images.forEach((_, index) => {
             const dot = document.createElement("span");
             dot.classList.add("dot");
@@ -1318,7 +1318,7 @@ document.write(b );
 
         updateDots();
 
-       
+
         setInterval(nextSlide, 9000);
     </script>
 
@@ -1343,7 +1343,7 @@ document.write(b );
 <script>
     let child = document.getElementById("child");
     let parent = child.parentElement;
-    
+
     parent.style.backgroundColor = "lightblue";
     parent.style.padding = "20px";
     parent.style.border = "2px solid blue";
@@ -1397,7 +1397,7 @@ element.childNodes → Returns all child nodes (including text, comments, etc.).
 element.nextElementSibling → Selects the next sibling element.
 element.previousElementSibling → Selects the previous sibling element. -->
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -1480,26 +1480,26 @@ element.previousElementSibling → Selects the previous sibling element. -->
             <div class="accordion-content">
                 <p>This is the content of Section 3.</p>
             </div>
-        </div> 
+        </div>
     </div>
 
     <script>
         document.querySelectorAll(".accordion-header").forEach(button => {
             button.addEventListener("click", function() {
                 const content = this.nextElementSibling;
-                
-             
+
+
                 document.querySelectorAll(".accordion-content").forEach(item => {
                     if (item !== content) {
                         item.style.display = "none";
                     }
                 });
 
-             
+
                 content.style.display = (content.style.display === "block") ? "none" : "block";
             });
         });
     </script>
 
 </body>
-</html>
+</html> -->

@@ -5,7 +5,7 @@
 
 // var element;
 // document.getElementById("header").setAttribute("style","color: blue");
-// var element = document.getElementById("header").innerHTML; 
+// var element = document.getElementById("header").innerHTML;
 // console.log(element);
 
 // document.getElementById("header").innerHTML = "Hello World";
@@ -19,9 +19,9 @@
 
 // var element;
 // document.querySelector("h1").setAttribute("style","color: green");
-// var element = document.getElementById("header").innerHTML; 
+// var element = document.getElementById("header").innerHTML;
 // console.log(element);
- 
+
 
 
 // css style method
@@ -61,7 +61,7 @@
 
 
 //  function xyz(){
-    
+
 //     var element = document.querySelector("#header").classList.add("xyz","vbs");
 // }
 
@@ -69,14 +69,14 @@
 // addEventListener method
 
 
-var element;
- document.querySelector("#header").addEventListener("click", xyz);
+// var element;
+//  document.querySelector("#header").addEventListener("click", xyz);
 
 
- function xyz(){
-    
-    this.classList.add("xyz","vbs");
-}
+//  function xyz(){
+
+//     this.classList.add("xyz","vbs");
+// }
 
 
 

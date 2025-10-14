@@ -1,74 +1,88 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Array of Objects</title>
-</head>
-<body>
-    <h2>Array of Objects Example</h2>
-    <div id="output"></div>
-
-    <script>
-        // Array of objects
-        let users = [{ name: "Ali", age: 25, city: "Karachi" },{ name: "Sara", age: 22, city: "Lahore" },{ name: "Ahmed", age: 28, city: "Islamabad" }
-        ];
-
-        let result = "";
-        result += '<table border="1"><tr><th>Index</th><th>Name</th><th>Age</th><th>City</th></tr>';
-        users.forEach(function(user, index) {
-            result += '<tr>';
-            result += "<td>User " + (index + 1) + "</td>";
-            result += "<td>" + user.name + "</td>";
-            result += "<td>" + user.age + "</td>";
-            result += "<td>" + user.city + "</td>";
-            result += '</tr>';
-        });
-        result += '</table>';
-
-        document.getElementById("output").innerHTML = result;
-    </script>
-</body>
-</html> -->
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For Loop with Objects</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scatter Chart Example (Chart.js)</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+    }
+    h2 {
+      color: #333;
+      margin-top: 40px;
+    }
+    .chart-container {
+      width: 500px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+  </style>
 </head>
+
 <body>
-    <h2>Users Table (For Loop)</h2>
-    <div id="output"></div>
+  <h2>📈 Student Performance (Scatter Chart)</h2>
 
-    <script>
-        // Array of objects
-        let users = [
-            { name: "Ali", age: 25, city: "Karachi" },
-            { name: "Sara", age: 22, city: "Lahore" },
-            { name: "Ahmed", age: 28, city: "Islamabad" }
-        ];
+  <div class="chart-container">
+    <canvas id="myScatterChart" width="400" height="300"></canvas>
+  </div>
 
-        result = users[0].name;
-        // let result = "";
-        // result += '<table border="1" cellpadding="8"><tr><th>Index</th><th>Name</th><th>Age</th><th>City</th></tr>';
+  <script>
+    const ctx = document.getElementById('myScatterChart').getContext('2d');
 
-        // // ✅ For loop
-        // for (let i = 0; i < users.length; i++) {
-        //     result += "<tr>";
-        //     result += "<td>User " + (i + 1) + "</td>";
-        //     result += "<td>" + users[i].name + "</td>";
-        //     result += "<td>" + users[i].age + "</td>";
-        //     result += "<td>" + users[i].city + "</td>";
-        //     result += "</tr>";
-        // }
-
-        // result += "</table>";
-
-        document.getElementById("output").innerHTML = result;
-    </script>
+    // Scatter data must have x and y coordinates
+    const myScatterChart = new Chart(ctx, {
+      type: 'scatter',
+      data: {
+        datasets: [{
+          label: 'Student Scores',
+          data: [
+            { x: 10, y: 25 },
+            { x: 15, y: 35 },
+            { x: 20, y: 30 },
+            { x: 25, y: 45 },
+            { x: 30, y: 40 },
+            { x: 35, y: 50 }
+          ],
+          backgroundColor: 'rgba(54, 162, 235, 0.8)',
+          borderColor: '#fff',
+          borderWidth: 2,
+          pointRadius: 6
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'top'
+          },
+          title: {
+            display: true,
+            text: 'Student Scores vs Study Hours'
+          }
+        },
+        scales: {
+          x: {
+            title: {
+              display: true,
+              text: 'Study Hours'
+            }
+          },
+          y: {
+            title: {
+              display: true,
+              text: 'Test Scores'
+            }
+          }
+        }
+      }
+    });
+  </script>
 </body>
 </html>

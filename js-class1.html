@@ -395,13 +395,13 @@ while (number <= 15) {
 <!-- delete -->
 <!-- <script>
     var ary = [10, 20, 30, 40, 50];
-    document.write(ary+ '<br>');
+    document.write(ary + '<br>');
     ary[2] = 60;
 
     document.write(ary + '<br>');
     delete ary[3];
 
-    document.write(ary+ '<br>');
+    document.write(ary + '<br>');
     document.write(ary[3]);
 </script> -->
 
@@ -414,11 +414,19 @@ reverse() -->
     var a = [20, 40, 30, 10, 5, 6];
     document.write(a + '<br>');
     a.sort(function(x, y) {
-        return x + y;
+        return x - y;
+    });
+
+    document.write(a+ '<br>');
+    a.sort(function(x, y) {
+        return y - x;
     });
     document.write(a);
-</script>
- -->
+
+
+
+</script> -->
+
 
 
 <!-- pop()
@@ -461,7 +469,7 @@ Join() -->
   var b = a.concat('James','Bond','actor');
   document.write(b);
 
-</script>  -->
+</script> -->
 
 <!-- <script>
     var a = ['Abdul', 'Basit', 'Sabrii'];
@@ -469,7 +477,7 @@ Join() -->
     var c = ['Tom', 'Cruise', 'actor'];
     var d = a.concat(b, c);
     document.write(d+ '<br>');
-    var f = d.join("-");
+    var f = d.join("<br>");
     document.write(f);
 
 </script> -->
@@ -481,15 +489,15 @@ Join() -->
     var a = ['Abdul', 'Basit', 'Sabrii'];
 
     document.write(a +" <br>");
-    var b = a.slice(0,1);
-    document.write(b);
+    var b = a.slice(0,2);
+    document.write(b+ "<br>");
 
 </script> -->
 
 <!-- <script>
     var a = ['Abdul', 'Basit', 'Sabrii','Sabrii','Sabrii'];
     document.write(a +" <br>");
-   a.splice(3, 3,"Tom","Cruse","Cruse","Cruse");
+   a.splice(3,3,"Tom","Cruse","Cruse","Cruse");
     document.write(a);
 </script> -->
 
@@ -564,6 +572,19 @@ Every()
 
     function checkA(c){
         return c >= 18;
+    }
+</script> -->
+
+
+<!-- <script>
+    var a = [20, 25, 18,20,30, 25];
+
+    document.write(a+'<br>');
+    var b = a.every(checkA);
+    document.write(b+'<br>');
+
+    function checkA(age){
+        return age >= 18;
 
     }
 </script> -->
@@ -587,7 +608,7 @@ Every()
 <!-- Find() & findindex()  -->
 
 <!-- <script>
-    var a = [5,15, 25, 18,20,30, 25];
+    var a = [5,15,14,12, 25, 18,30, 25];
 
     document.write(a+'<br>');
     var b = a.findIndex(checkA);
@@ -612,6 +633,8 @@ filter() -->
         return age >= 18;
 
     }
+
+
 </script> -->
 
 
@@ -1368,8 +1391,8 @@ document.write(b );
 
 <!-- sibling elements -->
 
-<div>
-    <!-- <p id="first">First paragraph</p>
+<!-- <div>
+    <p id="first">First paragraph</p>
     <p id="second">Second paragraph</p>
     <p id="third">Third paragraph</p>
 </div>
@@ -1383,7 +1406,7 @@ document.write(b );
 
 
 
-<!-- Yes! Here are all the relative elements you can use in JavaScript to navigate the DOM:
+    <!-- Yes! Here are all the relative elements you can use in JavaScript to navigate the DOM:
 
 1. Parent Elements
 element.parentElement → Selects the immediate parent of an element.
@@ -1397,7 +1420,7 @@ element.childNodes → Returns all child nodes (including text, comments, etc.).
 element.nextElementSibling → Selects the next sibling element.
 element.previousElementSibling → Selects the previous sibling element. -->
 
-<!-- <!DOCTYPE html>
+    <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
